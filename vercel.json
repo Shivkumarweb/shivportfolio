@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "builds": [
+    {
+      "src": "artifacts/portfolio/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "pnpm run build",
+        "distDir": "dist/public"
+      }
+    }
+  ]
+}
